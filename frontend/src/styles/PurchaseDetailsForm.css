@@ -1,0 +1,143 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #48c6ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; 
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Title */
+  .form-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Horizontal Form Styling */
+
+  .purchase-form-fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px;
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33% - 20px); 
+    min-width: 250px;
+  }
+
+  .input-group input {
+    margin-bottom: 20px;
+}
+
+
+  .input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #6200ee;
+    box-shadow: 0 0 10px rgba(72, 198, 239, 0.3);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* animation: pulse 0.5s infinite; */
+    width: 30%; 
+    margin-left: 35%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #6200ee;
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Focus Effects */
+  .input-field:focus,
+  .submit-btn:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .purchase-form {
+      flex-direction: column; 
+    }
+  
+    .input-group {
+      flex: 1 1 100%; 
+    }
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
