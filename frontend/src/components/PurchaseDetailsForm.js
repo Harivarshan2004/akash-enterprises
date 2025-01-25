@@ -32,7 +32,7 @@ const PurchaseDetailsForm = () => {
 
    
     axios
-      .post("http://localhost:5000/api/purchase", formData)
+      .post("https://akash-enterprises.onrender.com/api/purchase", formData)
       .then((response) => {
         console.log(response.data);
         alert("Purchase details saved successfully!");

@@ -16,7 +16,7 @@
 //     // Fetch data from the backend
 //     const fetchData = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/api/purchase"); 
+//         const response = await axios.get("https://akash-enterprises.onrender.com/api/purchase"); 
 //         setPurchaseData(response.data);
 //         setFilteredData(response.data); 
 //         setLoading(false);
@@ -241,7 +241,7 @@ const PurchaseTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/purchase");
+        const response = await axios.get("https://akash-enterprises.onrender.com/api/purchase");
         setPurchaseData(response.data);
         setFilteredData(response.data);
         setLoading(false);

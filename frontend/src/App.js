@@ -11,7 +11,7 @@ const App = () => {
         <AnimatedSwitch />
         <Routes>
           <Route path="/table" element={<PurchaseTable />} />
-          <Route path="/form" element={<PurchaseDetailsForm />} />
+          <Route path="/" element={<PurchaseDetailsForm />} />
         </Routes>
       </div>
     </Router>
