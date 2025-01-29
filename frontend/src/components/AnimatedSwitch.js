@@ -14,7 +14,7 @@ const AnimatedSwitch = () => {
 
   const handleToggle = () => {
     setIsTable((prev) => !prev);
-    navigate(isTable ? "/form" : "/table");
+    navigate(isTable ? "/" : "/table");
   };
 
   return (
