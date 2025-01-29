@@ -7,13 +7,11 @@ import AnimatedSwitch from "./components/AnimatedSwitch";
 const App = () => {
   return (
     <Router>
-      <div className="App">
         <AnimatedSwitch />
         <Routes>
-          <Route path="/table" element={<PurchaseTable />} />
           <Route path="/" element={<PurchaseDetailsForm />} />
+          <Route path="/table" element={<PurchaseTable />} />
         </Routes>
-      </div>
     </Router>
   );
 };
